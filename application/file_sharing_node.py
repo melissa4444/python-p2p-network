@@ -17,20 +17,22 @@ def print_help():
     print("stop")
     print("help")
 
-#implement a console application 
-command = input("?")
+# add the functionality to connect with another node
+def connect_to_node(node:FileSharingNode):
+    host = input("enter host or IP of node: ")
+    port = int(input("port?"))
+    node.connect_with_node(host, port)
+
+ #implement a console application 
+command = input("? ")
 while (command != "stop "):
     if(command == "help"):
         print_help()
+    if(command == "connect"):
+        connect_to_node(node)
         
     command = input("?")
 
 node.stop()
-''' 
-From this moment already have the bare minimum application that implements the framework p2pnetwork.
-No application specifics have been coded yet. The node is already listening to incoming connections
-and able to connect to other nodes at your command. From this point add the required functionality 
-to the application. In order to test this application run the application twice on different ports.
-In this case you could open two terminals and run the following commands:
-1. ````python file_sharing_node.py 9876````
-2. ````python file_sharing_node.py 9877```` '''
+
+ 

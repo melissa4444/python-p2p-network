@@ -1,1 +1,3 @@
-
+python 
+visual studios code 
+terminal 
