@@ -1,5 +1,5 @@
-from p2pnetwork.node import Node
 
+from p2pnetwork.node import Node
 class FileSharingNode (Node):
 
     def __init__(self, host, port, id=None, callback=None, max_connections=0):
