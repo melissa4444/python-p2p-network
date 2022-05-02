@@ -5,8 +5,8 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="p2pnetwork",
-    version="1.2",
-    author="Maurice Snoeren",
+    version="1.",
+    author="Melissa Ngueyn",
     author_email="macsnoeren@gmail.com",
     description="Python decentralized peer-to-peer network application framework.",
     long_description=long_description,
