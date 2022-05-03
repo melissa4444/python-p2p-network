@@ -1,0 +1,17 @@
+#still working on it
+import sys 
+import time
+
+from myp2pnode import myp2pnode
+
+node_1 = myp2pnode("127.0.0.1", 8001, 1)
+node_2 = myp2pnode("127.0.0.1", 8002, 2)
+
+time.sleep(1)
+
+node_1.start()
+node_2.start()
+
+time.sleep(1)
+
+node_2.connect_with_node('127.0.0.1', 8001)

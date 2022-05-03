@@ -1,4 +1,4 @@
-from p2pnetwork.nodeconnection import NodeConnection
+from mels_p2p_application import NodeConnection
 
 class mynodeConnetion (NodeConnection):
     #python class constructor 
@@ -6,4 +6,4 @@ class mynodeConnetion (NodeConnection):
         super(mynodeConnetion,self).__init__(main_node, sock, id, host, port) 
 
 # Check yourself what you would like to change and override! See the 
- # documentation and code of the nodeconnection class.
+ # documentation and code of the nodeconnection classfsdf

@@ -1,5 +1,5 @@
 from typing import Callable
-from application.mynodeConnection import mynodeConnetion
+from mynodeConnection import mynodeConnetion
 from p2pnetwork.node import Node 
 
 class myp2pnode (Node) :
